@@ -1,13 +1,8 @@
 .gitignore
 
+# osx
 .DS_Store
 .Trash/
-.bash_history
-.bash_sessions/
-.cache/
-.oracle_jre_usage/
-.python_history
-.sqlite_history
 Applications/
 Desktop/
 Documents/
@@ -17,6 +12,14 @@ Movies/
 Music/
 Pictures/
 Public/
+
+# *nix
+.bash_history
+.bash_sessions/
+.cache/
+.oracle_jre_usage/
+.python_history
+.sqlite_history
 cache/
 dotfiles/
 .viminfo
