@@ -1,5 +1,16 @@
 alias dotgit="git --git-dir=$(echo ~)/dotfiles/.git --work-tree=$(echo ~)"
 
+function gitp() {
+    if [ "$1" == "ush" ]; then
+        shift; shift;
+        git push $@
+    fi
+    if [ "$1" == "ull" ]; then
+        shift; shift;
+        git pull $@
+    fi
+}
+
 export PATH=~/bin:$PATH
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
