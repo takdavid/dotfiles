@@ -1,0 +1,3 @@
+echo $PASSWORD_STORE_DIR
+echo $PASSWORD_STORE_GIT
+pass git status >/dev/null
