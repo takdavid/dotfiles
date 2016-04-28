@@ -1,0 +1,2 @@
+sudo rmmod hid_multitouch
+sudo modprobe hid_multitouch
