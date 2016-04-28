@@ -1,5 +1,5 @@
 #!/bin/bash
 
-git config --global user.name "Dávid Takács"
+git config --global user.name "David Takacs"
 git config --global user.email "david.takacs@maven7.com"
 

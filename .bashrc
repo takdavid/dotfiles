@@ -129,3 +129,16 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export EDITOR=vim
+export VISUAL=vim
+export IGNOREEOF=42
+
+alias gai='git add -i'
+alias gau='git add -u'
+alias gcm='git commit -m'
+alias gdc='git diff --cached'
+alias gitd='git diff'
+alias gits='git status'
+alias gitpp='git pull && git push'
+alias gri='git rebase -i'
