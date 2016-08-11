@@ -12,6 +12,7 @@ function gitp() {
 }
 
 export PATH=~/bin:$PATH
+export PATH=$PATH:~/.gem/ruby/2.3.0/bin
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -137,8 +138,9 @@ export IGNOREEOF=42
 alias gai='git add -i'
 alias gau='git add -u'
 alias gcm='git commit -m'
-alias gdc='git diff --cached'
 alias gitd='git diff'
+alias gitdc='git diff --cached'
+alias gitl='git log'
 alias gits='git status'
-alias gitpp='git pull && git push'
+alias gitpp='git pull --rebase && git push && git push --tags'
 alias gri='git rebase -i'

@@ -131,7 +131,7 @@ bindsym $mod+Shift+0 move container to workspace number 10
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-#bindsym $mod+Shift+r exec bash /home/kdani/repos/dotfiles/restart_gui.sh
+#bindsym $mod+Shift+r exec bash ~/repos/dotfiles/restart_gui.sh
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
@@ -187,10 +187,10 @@ bindsym XF86AudioMicMute exec "amixer set Capture toggle"
 
 
 # scrot & gimp - root
-bindsym Print exec scrot -e 'mv $f /home/kdani/pics/screenshots'
+bindsym Print exec scrot -e 'mv $f /home/takdavid/Desktop/'
 # scrot & gimp - select window or rectangle
-bindsym --release $mod+Print exec scrot -s -e 'mv $f /home/kdani/pics/screenshots'
-bindsym $mod+Shift+Print exec scrot -u -e 'mv $f /home/kdani/pics/screenshots'
+bindsym --release $mod+Print exec scrot -s -e 'mv $f /home/takdavid/Desktop/'
+bindsym $mod+Shift+Print exec scrot -u -e 'mv $f /home/takdavid/Desktop/'
 bindsym $mod+Shift+P exec terminator -T "Floating Calculator" -e "ipython"
 
 bindsym $mod+Shift+greater move container to output right
@@ -220,7 +220,7 @@ exec pulseaudio --start &
 exec --no-startup-id hsetroot -solid "#4099a1" &
 
 ## Manual management of external displays
-set $mode_display Ext Screen (h) HDMI ON, (n) HDMI OFF
+set $mode_display External screen: (h) HDMI ON, (n) HDMI OFF
 mode "$mode_display" {
     bindsym h exec --no-startup-id xrandr --output HDMI1 --auto --right-of LVDS1, mode "default"
     bindsym n exec --no-startup-id xrandr --output HDMI1 --auto --off, mode "default"
@@ -228,4 +228,9 @@ mode "$mode_display" {
     bindsym Escape mode "default"
 }
 bindsym $mod+h mode "$mode_display"
+bindsym $mod+F8 mode "$mode_display"
+bindsym $mod+F5 exec xbacklight -inc 20
+bindsym $mod+F6 exec xbacklight -dec 20
+
+bindsym $mod+Pause exec i3lock -c 000000
 
