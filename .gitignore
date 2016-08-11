@@ -20,11 +20,21 @@ Public/
 .bash_sessions/
 .bcast/
 .cache/
+.config/Franz/
+.config/KDAB/
+.config/Meltytech/
+.config/QtProject.conf
+.config/Skype/
 .config/configstore/update-notifier-bower.json
+.config/eog/
+.config/gedit/
 .config/mc/
+.config/user-dirs.dirs
+.config/user-dirs.locale
 .gate
 .gate.session
 .gate.xml
+.geeknote/
 .gem/
 .gitconfig
 .gitlab-runner/config.toml
@@ -50,14 +60,15 @@ Public/
 .sqlite_history
 .sqlworkbench/
 .ssh/
+.tugboat
 .vim/.netrwhist
 .viminfo
 CytoscapeConfiguration/
 cache/
-dotfiles/
 gocode/
 
 # generic personal stuff
+dotfiles/
 keyring/
 store/
 
