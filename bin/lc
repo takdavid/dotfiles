@@ -1,0 +1,5 @@
+#!/usr/bin/perl
+#use feature 'unicode_strings';
+#binmode(STDIN, 'utf-8');
+#binmode(STDOUT, 'utf-8');
+while (<STDIN>) { print lc $_; }

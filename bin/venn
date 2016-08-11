@@ -1,0 +1,12 @@
+#!/bin/bash
+A=$(mktemp)
+sort --unique <$1 >$A
+B=$(mktemp)
+sort --unique <$2 >$B
+echo 'A'   `cat      $A    | wc -l`
+echo 'B'   `cat         $B | wc -l`
+echo 'A|B' `comm     $A $B | wc -l`
+echo 'A&B' `comm -12 $A $B | wc -l`
+echo 'A\B' `comm -23 $A $B | wc -l`
+echo 'B\A' `comm -13 $A $B | wc -l`
+rm $A $B
