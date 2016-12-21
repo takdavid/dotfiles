@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+echo x 1>&2
+echo x 1>&2
+echo x 1>&2
+echo x 1>&2
+echo x 1>&2
+while read line; do break; done
+echo
