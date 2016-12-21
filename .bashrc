@@ -61,7 +61,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -143,4 +143,24 @@ alias gitdc='git diff --cached'
 alias gitl='git log'
 alias gits='git status'
 alias gitpp='git pull --rebase && git push && git push --tags'
+alias gacp='git add -u; git commit; git push'
 alias gri='git rebase -i'
+function gmr() {
+	git checkout $1 && git pull && git checkout $2 && git pull && git merge $1 && git push
+}
+
+. /home/takdavid/.profabevjava
+export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
+export JAVA_HOME=/usr/lib/jvm/default
+
+alias dcub='docker-compose up --build'
+alias dcu='docker-compose up'
+alias db='docker build .'
+alias di='docker images'
+alias dp='docker ps -a'
+alias dxx='docker rm $(docker ps --all -q -f status=exited)'
+alias dxc='docker rm $(docker ps --all -q -f status=created)'
+alias dxi='docker images | egrep "^<none>" | cut -c41-52 | xargs docker rmi'
+alias dk='docker kill'
+alias drm='docker rm'
+alias drmi='docker rmi'
