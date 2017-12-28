@@ -158,9 +158,7 @@ function gmr() {
 	git checkout $1 && git pull && git checkout $2 && git pull && git merge $1 && git push
 }
 
-. /home/takdavid/.profabevjava
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
-export JAVA_HOME=/usr/lib/jvm/default
 
 alias dcub='docker-compose up --build'
 alias dcu='docker-compose up'
@@ -174,3 +172,5 @@ alias dk='docker kill'
 alias drm='docker rm'
 alias drmi='docker rmi'
 function dme() { x=$(docker-machine env $1); eval $x; echo "Docker machine: $DOCKER_MACHINE_NAME: $DOCKER_HOST"; }
+
+export PATH="/opt/gcc-7.1.0/bin:$PATH"

@@ -11,6 +11,28 @@ Movies/
 Music/
 Pictures/
 Public/
+.IdentityService/
+.ServiceHub/
+.aws/
+.config/NuGet/
+.config/git/
+.config/stetic/
+.config/thefuck/
+.config/xbuild/
+.cups/
+.docker/
+.gradle/
+.idea-build/
+.ivy2/
+.m2/
+.nuget/
+.passwd-s3fs
+.psql_history
+.rediscli_history
+.sbt/
+.scala_history
+.templateengine/
+.terraform.d/
 
 # *nix
 !.ssh/config
