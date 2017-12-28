@@ -1,8 +1,0 @@
-#!/bin/bash
-set -e
-set -x
-sudo ip link set enp0s20f0u3 down
-sudo netctl start enp0s20f0u3-dhcp
-sudo ip link set enp0s20f0u3 up
-sudo ip link set wlp1s0 down
-ip route get 78.24.186.235

@@ -1,3 +1,0 @@
-sudo wifi-menu
-#echo 60 > /proc/sys/net/ipv4/tcp_keepalive_time
-

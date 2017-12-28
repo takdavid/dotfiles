@@ -1,5 +1,0 @@
-if [ -z "$1" ]; then
-	setxkbmap -print | egrep '\+..\+' | cut -d'+' -f2
-else
-	setxkbmap -layout $*
-fi

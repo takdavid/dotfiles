@@ -1,2 +1,0 @@
-xset dpms force off
-systemctl suspend

@@ -1,9 +1,0 @@
-#!/bin/bash
-set -e
-set -x
-sudo ip link set wlp1s0 down
-sudo netctl start wlp1s0-maven7
-sudo ip link set wlp1s0 up
-sudo ip link set enp0s20f0u3 down
-ip route get 78.24.186.235
-
