@@ -140,6 +140,10 @@ export EDITOR=vim
 export VISUAL=vim
 export IGNOREEOF=42
 
+function get() {
+	(git clone --recursive $1 && cd $1 && git status) || (cd $1 && git fetch --all && git status)
+}
+alias get='git clone --recursive'
 alias gai='git add -i'
 alias gau='git add -u'
 alias gcm='git commit -m'
