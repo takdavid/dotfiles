@@ -12,7 +12,12 @@ function gitp() {
 }
 
 export PATH=~/bin:$PATH
+
 export PATH=$PATH:~/.gem/ruby/2.3.0/bin
+if $(which rbenv); then
+	export PATH="$HOME/.rbenv/bin:$PATH"
+	eval "$(rbenv init -)"
+fi
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
