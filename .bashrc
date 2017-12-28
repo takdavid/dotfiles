@@ -173,3 +173,4 @@ alias dxi='docker images | egrep "^<none>" | cut -c41-52 | xargs docker rmi'
 alias dk='docker kill'
 alias drm='docker rm'
 alias drmi='docker rmi'
+function dme() { x=$(docker-machine env $1); eval $x; echo "Docker machine: $DOCKER_MACHINE_NAME: $DOCKER_HOST"; }
