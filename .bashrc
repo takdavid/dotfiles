@@ -173,4 +173,7 @@ alias drm='docker rm'
 alias drmi='docker rmi'
 function dme() { x=$(docker-machine env $1); eval $x; echo "Docker machine: $DOCKER_MACHINE_NAME: $DOCKER_HOST"; }
 
+source ~/.bashrc_local
+source ~/.secretrc
+
 export PATH="/opt/gcc-7.1.0/bin:$PATH"

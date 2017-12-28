@@ -39,6 +39,7 @@ Public/
 .PyCharm50/restart/restarter
 .Skype/
 .bash_history
+.bashrc_local
 .bash_sessions/
 .bcast/
 .cache/
